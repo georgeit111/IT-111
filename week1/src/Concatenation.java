@@ -8,16 +8,19 @@ public class Concatenation {
 
         System.out.println("I hit the jackpot and won $" +money+  " dollars!");
 
-        System.out.println(color+ money);
+        System.out.println(color+ " " +money);
 
                 System.out.println("This will be my statement regarding my favorite color which is " +color+ " and will let you know that I won $" +money+ " dollars");
 
                 double ticketPrice = 150.00;
 
-        System.out.println("Line 1");
+        System.out.println("ticketPrice");
 
         if(ticketPrice > 150) {
-            System.out.println("Too much money");
+            System.out.println("Too much money");}
+            else { System.out.println("We will not buy");}
+
+
         }
     }
-}
+
