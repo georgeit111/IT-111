@@ -6,11 +6,16 @@ public class MyLiterGallons {
         float lit, gal;
         int lineCount = 1;
 
-        for (lit = 3.78541f; lit <= 100; lit += 5) {
-            gal = (lit / 3.78541f);
-            System.out.printf("%.2f liters is equal to %.2f gallons\n", lit, gal);
+        for (gal = 1; gal <= 100; gal += 5) {
+            lit = (gal * 3.78541f);
+
 
             lineCount++;
+            if(gal <= 1) {
+                System.out.printf("%.2f liters is equal to %.1f gallon\n", lit, gal);
+            } else { System.out.printf("%.2f liters is equal to %.1f gallons\n", lit, gal);
+
+            }
             if (lineCount % 5 == 2) {
                 System.out.println(); // Blank line every 5 lines
 
